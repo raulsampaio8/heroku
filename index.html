@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Try Angularjs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <style>
+      body { font-size: 2rem; }
+
+      .panel {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .panel-item { max-width: 50%; }
+
+      input {
+        color: #333;font-size: inherit;
+        text-align: center;text-transform: uppercase;
+        outline: 0;vertical-align: middle;
+        border: 0;
+        border-bottom: .07em solid #acacac;
+        padding: 5px 10px;
+      }
+
+      input:focus { border-color: #222;border-width: .1em; }
+
+      label { text-transform: uppercase; }
+    </style>
+  </head>
+
+  <body ng-app="" style="background-color: {{myCol}}">
+    <div class="panel" ng-init="myCol='#fff'">
+      <div class="panel-item">
+        <input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
+      </div>
+    </div>
+  </body>
+</html>
