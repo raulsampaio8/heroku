@@ -6,14 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcoscerqueira/heroku.git"
   },
-  "author": "mcerqueira",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/marcoscerqueira/heroku/issues"
-  },
-  "homepage": "https://github.com/marcoscerqueira/heroku#readme"
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
